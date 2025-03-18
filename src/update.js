@@ -244,7 +244,7 @@ I'm a Growing Front-End Developer from Indonesia. I love a challenge and I'm ski
 <!-- Last updated on ${date.toString()} ;-;-->
 
 <p align="center">${special[2]} Last updated on ${dd}${getDateSuffix(dd)} ${date.toLocaleString('default', { month: 'long' })
-    } ${date.getFullYear()} ${special[2]}</p> ${mm === 11 && dd === 28 ? "and... today is my birthday" : ""}`; 
+    } ${date.getFullYear()} ${special[2]}</p><br>${mm === 11 && dd === 28 ? "and... today is my birthday" : ""}`; 
 
   fs.writeFileSync(readMePath, text);
 };
