@@ -243,8 +243,8 @@ I'm a Growing Front-End Developer from Indonesia. I love a challenge and I'm ski
 
 <!-- Last updated on ${date.toString()} ;-;-->
 
-<i>Last updated on ${dd}${getDateSuffix(dd)} ${date.toLocaleString('default', { month: 'long' })
-    } ${date.getFullYear()} using magic</i> ${special[2]} ${mm === 11 && dd === 28 ? "and... today is my birthday" : ""}`; 
+<p align="center">${special[2]} Last updated on ${dd}${getDateSuffix(dd)} ${date.toLocaleString('default', { month: 'long' })
+    } ${date.getFullYear()} ${special[2]}</p> ${mm === 11 && dd === 28 ? "and... today is my birthday" : ""}`; 
 
   fs.writeFileSync(readMePath, text);
 };
