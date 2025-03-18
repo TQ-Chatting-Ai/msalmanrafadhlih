@@ -1,5 +1,5 @@
 <!--
-**msalmanrafadhlih/msalmanrafadhlih** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**msalmanrafadhlih/msalmanrafadhlih** is a ✨ _special_ ✨ repository because its README.md (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
@@ -176,3 +176,8 @@ I'm a Growing Front-End Developer from Indonesia. I love a challenge and I'm ski
   </p>
 </details>
 
+
+
+<!-- Last updated on Tue Mar 18 2025 00:09:51 GMT+0000 (Coordinated Universal Time) ;-;-->
+
+<i>Last updated on 18th March 2025 using magic</i> ✨ 

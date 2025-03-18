@@ -1,6 +1,6 @@
-const path = require("path");
-const fetch = require("node-fetch");
-const fs = require("fs");
+import path from "path";
+import fetch from "node-fetch";
+import fs from "fs";
 
 let stars = 0,
   page = 1;
@@ -48,7 +48,7 @@ const fetchUserData = async () => {
 };
 
 const writeReadMe = async () => {
-  const readMePath = path.join(__dirname, "..", "README.md");
+  const readMePath = path.join(process.cwd(), "README.md");
   const date = new Date();
   const [dd, mm] = [date.getDate(), date.getMonth() + 1];
 
@@ -244,7 +244,7 @@ I'm a Growing Front-End Developer from Indonesia. I love a challenge and I'm ski
 <!-- Last updated on ${date.toString()} ;-;-->
 
 <i>Last updated on ${dd}${getDateSuffix(dd)} ${date.toLocaleString('default', { month: 'long' })
-    } ${date.getFullYear()} using magic</i> ${special[2]} ${mm === 11 && dd === 28 ? "and... today is my birthday" : ""}`;
+    } ${date.getFullYear()} using magic</i> ${special[2]} ${mm === 11 && dd === 28 ? "and... today is my birthday" : ""}`; 
 
   fs.writeFileSync(readMePath, text);
 };
@@ -259,6 +259,10 @@ const getDateSuffix = (day) => {
   }
 };
 
+
 (async () => {
   await countStars();
 })();
+
+
+export {};
