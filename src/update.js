@@ -74,6 +74,18 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...,
 - 😄 Pronouns: ...,
 - ⚡ Fun fact: ...,
+
+const Tquilla = {
+  FavouriteLanguage: "JavaScript/TypeScript",
+  OpenedIssues: {{ ISSUES }},
+  OpenedPullRequests: {{ PULL_REQUESTS }},
+  TotalCommits: {{ COMMITS }},
+  Stars: ${stars},
+  Repositories: {
+    Created: {{ REPOSITORIES }},
+    Contributed: {{ REPOSITORIES_CONTRIBUTED_TO }}
+  },
+};
 -->
 
 
@@ -237,10 +249,7 @@ I'm a Growing Front-End Developer from Indonesia. I love a challenge and I'm ski
     <a href=""><img width="80" src="https://github-profile-trophy.vercel.app/?username=msalmanrafadhlih&rank=-B,-C,-?&column=1&margin-w=1&no-frame=true&margin-h=15&no-bg=true&theme=dracula&title=PullRequest"/></a>
     <a href=""><img width="335" src="https://github-profile-trophy.vercel.app/?username=msalmanrafadhlih&title=-Commits,-Repositories,-Reviews,-Stars,-Folowers,-Experiences,-Issues,-PullRequest&column=4&margin-w=1&no-frame=true&margin-h=15&no-bg=true&theme=dracula&"/></a>
   </p>
-</details>
-
-
-
+</details><br><br>
 <!-- Last updated on ${date.toString()} ;-;-->
 
 <p align="center">${special[2]} Last updated on ${dd}${getDateSuffix(dd)} ${date.toLocaleString('default', { month: 'long' })
