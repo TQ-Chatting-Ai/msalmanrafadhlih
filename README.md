@@ -14,13 +14,13 @@ Here are some ideas to get you started:
 
 const Tquilla = {
   FavouriteLanguage: "JavaScript/TypeScript",
-  OpenedIssues: 7,
-  OpenedPullRequests: 67,
-  TotalCommits: 994,
-  Stars: 54,
+  OpenedIssues: 8,
+  OpenedPullRequests: 68,
+  TotalCommits: 1012,
+  Stars: 55,
   Repositories: {
     Created: 7,
-    Contributed: 24
+    Contributed: 25
   },
 };
 -->
@@ -176,8 +176,8 @@ I'm a Growing Front-End Developer from Indonesia. I love a challenge and I'm ski
       <img align="left" src="https://user-images.githubusercontent.com/65187002/144930161-2f783401-8d27-4fdf-a2f7-cc0ba32f1f1f.gif" width="30%" style="display:inline;"><img align="right" src="https://user-images.githubusercontent.com/65187002/144930161-2f783401-8d27-4fdf-a2f7-cc0ba32f1f1f.gif" width="30%" style="display:inline;">
 <!--   GitHub Trophy https://github.com/ryo-ma/github-profile-trophy?tab=readme-ov-file#apply-theme -->
   <p align="center">
-    <a href="https://github.com/ryo-ma/github-profile-trophy"><img width="80" src="https://github-profile-trophy.vercel.app/?username=msalmanrafadhlih&rank=-B,-C,-?&column=1&title=Commits&margin-w=1&no-frame=true&margin-h=15&no-bg=true&theme=dracula"/></a>
-    <a href=""><img width="80" src="https://github-profile-trophy.vercel.app/?username=msalmanrafadhlih&rank=-B,-C,-?&column=1&title=Repositories&margin-w=1&no-frame=true&margin-h=15&no-bg=true&theme=dracula"/></a>
+    <a href="https://github.com/ryo-ma/github-profile-trophy"><img width="80" src="https://github-profile-trophy.vercel.app/?username=msalmanrafadhlih&rank=-B,-C,-?&column=1&margin-w=1&no-frame=true&margin-h=15&no-bg=true&theme=dracula&title=Commits"/></a>
+    <a href=""><img width="80" src="https://github-profile-trophy.vercel.app/?username=msalmanrafadhlih&rank=-B,-C,-?&column=1&margin-w=1&no-frame=true&margin-h=15&no-bg=true&theme=dracula&title=Repositories"/></a>
     <a href=""><img width="80" src="https://github-profile-trophy.vercel.app/?username=msalmanrafadhlih&rank=-B,-C,-?&column=1&title=Reviews&margin-w=1&no-frame=true&margin-h=15&no-bg=true&theme=dracula"/></a>
     <a href=""><img width="80" src="https://github-profile-trophy.vercel.app/?username=msalmanrafadhlih&rank=-B,-C,-?&column=1&margin-w=1&no-frame=true&margin-h=15&no-bg=true&theme=dracula&title=Stars"/></a>
     <a href=""><img width="80" src="https://github-profile-trophy.vercel.app/?username=msalmanrafadhlih&rank=-B,-C,-?&column=1&margin-w=1&no-frame=true&margin-h=15&no-bg=true&theme=dracula&title=Followers"/></a>
@@ -187,6 +187,6 @@ I'm a Growing Front-End Developer from Indonesia. I love a challenge and I'm ski
     <a href=""><img width="335" src="https://github-profile-trophy.vercel.app/?username=msalmanrafadhlih&title=-Commits,-Repositories,-Reviews,-Stars,-Folowers,-Experiences,-Issues,-PullRequest&column=4&margin-w=1&no-frame=true&margin-h=15&no-bg=true&theme=dracula&"/></a>
   </p>
 </details><br><br>
-<!-- Last updated on Fri Apr 04 2025 12:37:22 GMT+0000 (Coordinated Universal Time) ;-;-->
+<!-- Last updated on Wed Apr 09 2025 12:38:57 GMT+0000 (Coordinated Universal Time) ;-;-->
 
-<p align="center">✨ Last updated on 4th April 2025 ✨</p><br>
+<p align="center">✨ Last updated on 9th April 2025 ✨</p><br>
