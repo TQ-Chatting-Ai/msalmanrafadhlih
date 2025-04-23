@@ -15,8 +15,8 @@ Here are some ideas to get you started:
 const Tquilla = {
   FavouriteLanguage: "JavaScript/TypeScript",
   OpenedIssues: 8,
-  OpenedPullRequests: 70,
-  TotalCommits: 1143,
+  OpenedPullRequests: 71,
+  TotalCommits: 1212,
   Stars: 56,
   Repositories: {
     Created: 7,
@@ -187,6 +187,6 @@ I'm a Growing Front-End Developer from Indonesia. I love a challenge and I'm ski
     <a href=""><img width="335" src="https://github-profile-trophy.vercel.app/?username=msalmanrafadhlih&title=-Commits,-Repositories,-Reviews,-Stars,-Folowers,-Experiences,-Issues,-PullRequest&column=4&margin-w=1&no-frame=true&margin-h=15&no-bg=true&theme=dracula&"/></a>
   </p>
 </details><br><br>
-<!-- Last updated on Sat Apr 19 2025 08:21:50 GMT+0000 (Coordinated Universal Time) ;-;-->
+<!-- Last updated on Wed Apr 23 2025 08:26:18 GMT+0000 (Coordinated Universal Time) ;-;-->
 
-<p align="center">✨ Last updated on 19th April 2025 ✨</p><br>
+<p align="center">✨ Last updated on 23rd April 2025 ✨</p><br>
