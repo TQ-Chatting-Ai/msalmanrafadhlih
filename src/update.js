@@ -109,7 +109,7 @@ const Tquilla = {
 <!--https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif-->
 <h3 style="font-family: comic-sans-ms"><samp>
 I'm a Growing Front-End Developer from Indonesia. I love a challenge and I'm skilled at progressing from a simple proposal into a well-defined, coded, and tested solution.</samp> <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"></h3>
-  <a href="" align="center"> <img src="https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Portfolio Badge"/></a>
+  <a href="https://msalmanrafadhlih.github.io/My-portofolio/" align="center"> <img src="https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Portfolio Badge"/></a>
 <ul>
  <li><samp>🌱 Exploring Technical Content Writing.</samp></li>
  <li><samp>⚡ In my free time, I love to read tech articles.</samp></li>

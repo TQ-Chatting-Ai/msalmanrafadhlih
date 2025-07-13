@@ -46,7 +46,7 @@ const Tquilla = {
 <!--https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif-->
 <h3 style="font-family: comic-sans-ms"><samp>
 I'm a Growing Front-End Developer from Indonesia. I love a challenge and I'm skilled at progressing from a simple proposal into a well-defined, coded, and tested solution.</samp> <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"></h3>
-  <a href="" align="center"> <img src="https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Portfolio Badge"/></a>
+  <a href="https://msalmanrafadhlih.github.io/My-portofolio/" align="center"> <img src="https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Portfolio Badge"/></a>
 <ul>
  <li><samp>🌱 Exploring Technical Content Writing.</samp></li>
  <li><samp>⚡ In my free time, I love to read tech articles.</samp></li>
@@ -143,6 +143,6 @@ I'm a Growing Front-End Developer from Indonesia. I love a challenge and I'm ski
     <a href=""><img width="335" src="https://github-profile-trophy.vercel.app/?username=msalmanrafadhlih&title=-Commits,-Repositories,-Reviews,-Stars,-Folowers,-Experiences,-Issues,-PullRequest&column=4&margin-w=1&no-frame=true&margin-h=15&no-bg=true&theme=dracula&"/></a>
   </p>
 </details><br><br>
-<!-- Last updated on Tue Jul 08 2025 04:30:36 GMT+0000 (Coordinated Universal Time) ;-;-->
+<!-- Last updated on Sun Jul 13 2025 20:21:11 GMT+0000 (Coordinated Universal Time) ;-;-->
 
-<p align="center">✨ Last updated on 8th July 2025 ✨</p><br>
+<p align="center">✨ Last updated on 13th July 2025 ✨</p><br>
