@@ -1,0 +1,259 @@
+# ███████╗██╗  ██╗██╗  ██╗██╗  ██╗██████╗ ██████╗  ██████╗
+# ██╔════╝╚██╗██╔╝██║  ██║██║ ██╔╝██╔══██╗██╔══██╗██╔════╝
+# ███████╗ ╚███╔╝ ███████║█████╔╝ ██║  ██║██████╔╝██║
+# ╚════██║ ██╔██╗ ██╔══██║██╔═██╗ ██║  ██║██╔══██╗██║
+# ███████║██╔╝ ██╗██║  ██║██║  ██╗██████╔╝██║  ██║╚██████╗
+# ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝ ╚═════╝
+# --- Z0mbiE ---------	https://github.com/gh0stzk/dotfiles
+# =========================================================
+
+
+# ---------------------------------------------- CHEATSHEET
+alt + F1
+	OpenApps --KeyHelp
+
+
+###########################################################
+# --------------------- BSPWM & SXKHD ------------------- #
+###########################################################
+# ==================================================  BSPWM
+# ---------------------------------------------------------  Reload sxhkd
+super + grave
+	pkill -USR1 -x sxhkd; dunstify -u low -i ~/.config/bspwm/src/assets/reload.svg 'sxhkd' 'The configuration file has been reloaded successfully!'
+# ---------------------------------------------------------  Refresh bspwm
+ctrl + super + alt + Return
+	bspc wm -r;
+
+###########################################################
+# ------------------ Applications ----------------------- #
+###########################################################
+# ==============================================  MAIN APPS
+# ---------------------------------------------------------  Jgmenu
+super + a
+    /usr/bin/jgmenu_run
+# xqp 0 $(xdo id -N Bspwm -n root) && jgmenu --csv-file=~/.config/bspwm/src/config/jgmenu.txt --config-file=~/.config/bspwm/src/config/jgmenurc
+# ---------------------------------------------------------  Menu Apps
+super + @space 
+	OpenApps --menu 
+# ---------------------------------------------------------  Browser, Editor, File Manager
+super + {b,e,f} 
+	OpenApps --{browser,editor,filemanager}
+# ---------------------------------------------------------  Terminal apps (yazi, ncmpcpp)
+super + {y,m}
+	OpenApps --{yazi,music}
+# ---------------------------------------------------------  Terminal apps (neovim)
+super + n
+	OpenApps --{nvim} --floating
+# ---------------------------------------------------------  Pavucontrol, Whatsapp
+super + {p,w}
+	OpenApps --{soundcontrol,whats}
+# ---------------------------------------------------------  Discord
+super + d
+	nohup vesktop >/dev/null 2>&1 &
+# ---------------------------------------------------------  Gimp
+super + g
+	nohup gimp >/dev/null 2>&1 &
+# ---------------------------------------------------------  Spotify
+super + s
+	nohup spotify >/dev/null 2>&1 &
+# ---------------------------------------------------------  VS CODE
+super + c
+	code
+
+
+
+###########################################################
+# ---------------------- Utilities ---------------------- #
+###########################################################
+# ===============================================  TERMINAL
+# ---------------------------------------------------------  OPEN TERMINAL
+super + {_,alt + } Return 
+	OpenApps --{terminal,floating}
+# ---------------------------------------------------------  Scrachpad
+super + alt + p
+	OpenApps --scratch
+# ---------------------------------------------------------  TERMINAL MODE (Kitty, Alcricity)
+super + alt + t 
+	Term --selecterm
+
+# ======================================== ENVIRONMENT APPS
+# ---------------------------------------------------------  MENU STYLE
+super + alt + m
+    RofiLauncher --choose-style
+# ---------------------------------------------------------  KEYBOARD LAYOUT
+super + alt + k
+	OpenApps --keyboard
+# ---------------------------------------------------------  THEME SELECTOR
+super + alt + @space 
+	RiceSelector
+# ---------------------------------------------------------  Rice Editor
+super + alt + r 
+	RiceEditor
+# ---------------------------------------------------------  Select Wallpaper
+super + alt + w
+	WallSelect
+# ---------------------------------------------------------  Node Switcer
+# Node switcher
+super + Tab
+    rofi \
+        -theme $HOME/.config/bspwm/src/rofi-themes/Windows.rasi \
+        -show window -window-thumbnail \
+        -window-hide-active-window true \
+        -kb-accept-entry "!super-Tab,Return" \
+	-kb-element-next "super-Tab"
+
+###########################################################
+# ---------------------- Workspaces --------------------- #
+###########################################################
+# =================================================== 1 - 9
+# ---------------------------------------------------------  Swap workspace by arrow
+super + {Left,Right}
+	bspc desktop -f {prev,next}
+# ------f--------------------------------------------------  Swap Workspace by number
+super + {1-9,0}
+    bspc desktop -f '^{1-9,10}'
+
+# ================================================= POLYBAR
+# ---------------------------------------------------------  Hide/Show Polibar
+alt + {h,u}
+	HideBar {-h,-u}
+
+# =================================================== NODES
+# ========================================== NAVIGATE NODES
+# ---------------------------------------------------------  Move focused Node to spesific workspace
+super + shift + {1-9,0}
+    	bspc node -d '^{1-9,10}'
+# ---------------------------------------------------------  Move focused NOde to spesific worksapce by arrow
+super + shift + {Left,Right}
+	bspc node -d {prev,next} '--follow'
+# ---------------------------------------------------------  Swap Focused Node
+super + alt + {Left,Down,Up,Right}
+	{ DIR=west FALLBACK=prev; , DIR=south; , DIR=north; , DIR=east FALLBACK=next; } \
+	bspc node -f $DIR.!sticky.!hidden.local || bspc node -f $FALLBACK.leaf.!sticky.!hidden.local
+# ---------------------------------------------------------  Swap Node
+super + ctrl + {Left,Down,Up,Right}
+	bspc node -s {west,south,north,east}.local
+# ---------------------------------------------------------  Bring all Nodes to spesific workspace
+#super + shift + a ; {1-9}
+#    	bspc query -N -d {1-9} -n '.window' | xargs -I id -n 1 bspc node id -d focused
+# ---------------------------------------------------------  Bring all Marked Node to focused workspace
+#super + shift + m ; {1-9}
+#    	bspc query -N -n '.marked' | xargs -I id -n 1 bspc node id -d focused --follow
+# ---------------------------------------------------------  Increase / Deacrese Nodes
+super + shift + {plus,minus}
+	{ \
+       bspc node -z top_right 20 -20 ; bspc node -z bottom_left -20 20; \
+    ,  bspc node -z top_right -20 20 ; bspc node -z bottom_left 20 -20; \
+    }
+
+# ========================================== FLOATING NODES
+# ---------------------------------------------------------  move floating window
+ctrl + shift + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+# ---------------------------------------------------------  Increase/decrease floating window
+ctrl + shift + {plus,minus}
+	{ \
+	  xdotool getactivewindow windowmove --relative -- -50 -25 ; xdo resize -w +100 -h +50; \
+	, xdotool getactivewindow windowmove --relative -- +50 +25 ; xdo resize -w -100 -h -50; \
+	}
+
+# ============================================== PLAY NODES
+# ---------------------------------------------------------  NODE Display
+super + shift + {a,d,w,s}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+# ---------------------------------------------------------  NODE Status
+super + shift + {m,n,c,p,h}
+	bspc node -g {marked,locked,sticky,private,hidden}
+# ---------------------------------------------------------  Toggle monocle <-> tiled
+super + shift + t
+	bspc desktop -l next
+# ---------------------------------------------------------  Show NODE
+super + shift + u
+	bspc node $(bspc query -N -n .hidden.local.window | head -n1) --flag hidden=off
+# ---------------------------------------------------------  NODE Transparensi
+super + ctrl + minus
+    picom-trans -c -3
+
+super + ctrl + equal
+    picom-trans -c +3
+
+super + ctrl + 0
+    picom-trans -c -d
+# ---------------------------------------------------------  Rotate Node 90^
+super + shift + Tab
+	bspc node @/ --rotate 90
+# ---------------------------------------------------------  CloSe/kill Nodes
+super + {_,shift + }q
+	bspc node -{c,k}
+# ---------------------------------------------------------  Balance Nodes
+super + shift + b
+  bspc node @/ -B
+# ---------------------------------------------------------  Control Direction
+super + shift {Up,Down,Return}
+	bspc node -p {east,south,cancel}
+# ---------------------------------------------------------  Kill all Current nodes in workspace
+super + ctrl + x
+	bspc query -N -d | xargs -I id -n 1 bspc node id -c
+# ---------------------------------------------------------  Focused the last node/desktop
+alt + {Tab,period}
+  bspc {node,desktop} -f last
+# ---------------------------------------------------------  kill all unfocused nodes
+super + shift + k ; {x,k}
+    bspc query -N -n '.!focused.!marked.local.window' | xargs -I id -n 1 bspc node id {-c,-k}
+
+
+# =============================================== UTILITIES
+# ---------------------------------------------------------  Android Mount
+super + alt + a
+	OpenApps --android
+# ---------------------------------------------------------  Network Manager
+super + alt + n
+	OpenApps --netmanager
+# ---------------------------------------------------------  Bluetooth
+super + alt + b
+	OpenApps --bluetooth
+# ---------------------------------------------------------  Clipboard
+super + alt + c
+	OpenApps --clipboard
+# ---------------------------------------------------------  ScreenShoot
+super + alt + s
+	OpenApps --screenshot
+
+# ==================================================  OTHER
+# ---------------------------------------------------------  Brightness
+XF86MonBrightness{Up,Down}
+	sh Brightness {up,down}
+# ---------------------------------------------------------  Volume
+XF86Audio{RaiseVolume,LowerVolume,Mute}
+	Volume{ --inc, --dec, --toggle}
+# ---------------------------------------------------------  Play Music
+XF86Audio{Next,Prev,Play,Stop}
+	MediaControl {--next,--previous,--toggle,--stop}
+# ---------------------------------------------------------  Touchpad
+XF86TouchpadToggle
+	~/.local/bin/toggle_touchpad.sh
+
+# ============================================== POWER MENU
+# ---------------------------------------------------------  Powermenu
+super + Escape
+	OpenApps --powermenu
+# ---------------------------------------------------------  Shutdown, Reboot, Logout, Lockscreen, Softreload WM
+ctrl + alt + {p,r,q,l,k,s}
+	{systemctl poweroff, systemctl reboot,bspc quit,ScreenLocker,xkill,SoftReload}
+
+# ---------------------------------------------------------  Toggle AutoLock
+super + alt + x
+    if [ -f /tmp/autolock_paused ]; then \
+        rm /tmp/autolock_paused; \
+        date +%s > /tmp/autolock_last_active; \
+        notify-send "🔒 AutoLock" "Mode otomatis diaktifkan"; \
+    else \
+        touch /tmp/autolock_paused; \
+        notify-send "🔓 AutoLock" "Mode otomatis dijeda"; \
+    fi
+
+
+
+
+
+# @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
