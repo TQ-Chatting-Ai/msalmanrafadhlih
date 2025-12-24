@@ -5,7 +5,13 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 */4 * * *'
+    - cron: '0 */12 * * *' # '*' = INCLUDE ALL VALUE (('* * * * *') = jalan setiap menit..)
+#            │  │   │ │ │  #  NB = '*/n' = every n | 'n,n' = multi value | 'n-n' = rentang
+#            │  │   │ │ └ Hari dalam minggu (0-6, Minggu = 0)
+#            │  │   │ └── Bulan (1-12)
+#            │  │   └──── Hari dalam bulan (1-31)
+#            │  └──────── Jam (0-59)
+#            └─────────── Menit (0-59)
   workflow_dispatch:
     
 
